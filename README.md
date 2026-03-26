@@ -94,4 +94,4 @@ Thiha Kyaw Zaw
 MSc Data Science, University of Sheffield
 
 ### Confusion Matrix
-![Confusion Matrix](results/class_distribution_before_smote.png)
+![Confusion Matrix](results/user_reduction_bar_chart.png)
