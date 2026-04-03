@@ -34,11 +34,17 @@ The project implements a complete end-to-end machine learning pipeline, includin
 ## 🚀 Key Highlights
 
 🧬 Healthcare-focused ML application (early disease detection)
+
 ⌨️ Uses keystroke dynamics (non-invasive biomarker)
+
 🧠 Implements Recursive Feature Elimination (RFE)
+
 ⚖️ Handles class imbalance using SMOTE
+
 🔒 Prevents data leakage with GroupShuffleSplit (user-level split)
+
 📊 Multiple models tested: Random Forest, Logistic Regression, SVM, XGBoost
+
 📈 Strong performance with robust evaluation metrics
 
 ---
@@ -59,7 +65,7 @@ The project implements a complete end-to-end machine learning pipeline, includin
   * Keystroke data: Hold time, latency time, flight time
   * User metadata: Age, gender, diagnosis status, medication, etc.
   
-Data was merged from:
+* Data was merged from:
 
   * Tappy keystroke dataset
   * User clinical information files
@@ -127,6 +133,19 @@ Data was merged from:
 
 ---
 
+## 📈 Visualisations
+
+🔄 Class Imbalance Handling (SMOTE)
+
+![Class Distribution Before and After SMOTE](results/class_distribution_before_and_after_smote.png)
+
+This visualisation compares the class distribution before and after applying SMOTE.
+Initially, the dataset was highly imbalanced, with significantly fewer Parkinson’s cases.
+
+After applying SMOTE, both classes are balanced, enabling the model to learn more effectively and reducing bias toward the majority class.
+
+---
+
 ## 🛠️ Tech Stack
 
 * Python
@@ -139,13 +158,15 @@ Data was merged from:
 
 ## 🚀 Future Improvements
 
-* Use larger and more diverse datasets
-* Apply deep learning models
-* Explore real-time detection systems
+* Deep learning models (LSTM for temporal typing patterns)
+* Real-time detection system
+* Web/app deployment for clinical use
+* Larger and more diverse datasets
 
 ---
 
 ## 📌 Author
 
 Thiha Kyaw Zaw
-MSc Data Science, University of Sheffield
+
+MSc Data Science - University of Sheffield
