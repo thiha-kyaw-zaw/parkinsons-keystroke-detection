@@ -137,7 +137,9 @@ The project implements a complete end-to-end machine learning pipeline, includin
 
 🔄 Class Imbalance Handling (SMOTE)
 
-![Class Distribution Before and After SMOTE](results/class_distribution_before_and_after_smote.png)
+<p align="center">
+  <img src="results/class_distribution_before_and_after_smote.png" width="700"/>
+</p>
 
 This visualisation compares the class distribution before and after applying SMOTE.
 Initially, the dataset was highly imbalanced, with significantly fewer Parkinson’s cases.
