@@ -137,7 +137,7 @@ The project implements a complete end-to-end machine learning pipeline, includin
 
 The project includes several visualisations to support model performance, data preprocessing decisions, and feature analysis:
 
-📉 Dataset Filtering Impact
+### 📉 Dataset Filtering Impact
 
 <p align="center">
   <img src="results/user_reduction_bar_chart.png" width="700"/>
@@ -156,7 +156,24 @@ This process ensures:
 
 ---
 
-🔄 Class Imbalance Handling (SMOTE)
+### 👥 Train–Test Split Integrity
+
+<p align="center">
+  <img src="results/unique_users_training_vs_test_sets.png" width="700"/>
+</p>
+
+This chart shows the number of unique users in the training and test sets.
+* Training set: 44 users
+* Test set: 20 users
+
+A user-level split (GroupShuffleSplit) was applied to ensure:
+* No overlap between users
+* Prevention of data leakage
+* More reliable model evaluation
+
+---
+
+### 🔄 Class Imbalance Handling (SMOTE)
 
 <p align="center">
   <img src="results/class_distribution_before_and_after_smote.png" width="700"/>
