@@ -135,14 +135,34 @@ The project implements a complete end-to-end machine learning pipeline, includin
 
 ## 📈 Visualisations
 
+The project includes several visualisations to support model performance, data preprocessing decisions, and feature analysis:
+
+📉 Dataset Filtering Impact
+
+<p align="center">
+  <img src="results/user_reduction_bar_chart.png" width="700"/>
+</p>
+
+This visualisatoin shows how the dataset was refined through successive filtering steps.
+* Initial dataset: 217 users
+* After keystroke filtering: 131 users
+* After focusing on mild severity: 118 users
+* Final dataset (excluding Levodopa): 64 users
+
+This process ensures:
+* Sufficient typing data per user
+* Focus on early-stage Parkinson's detection
+* Reduced bias from medication effects
+
+---
+
 🔄 Class Imbalance Handling (SMOTE)
 
 <p align="center">
   <img src="results/class_distribution_before_and_after_smote.png" width="700"/>
 </p>
 
-This visualisation compares the class distribution before and after applying SMOTE.
-Initially, the dataset was highly imbalanced, with significantly fewer Parkinson’s cases.
+This visualisation compares the class distribution before and after applying SMOTE. Initially, the dataset was highly imbalanced, with significantly fewer Parkinson’s cases.
 
 After applying SMOTE, both classes are balanced, enabling the model to learn more effectively and reducing bias toward the majority class.
 
