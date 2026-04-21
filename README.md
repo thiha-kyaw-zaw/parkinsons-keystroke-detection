@@ -173,6 +173,47 @@ A user-level split (GroupShuffleSplit) was applied to ensure:
 
 ---
 
+### 📈 Age Distribution Analysis
+
+<p align="center">
+  <img src="results/age_group_distribution.png" width="700"/>
+</p>
+
+The age distribution highlights the demographic structure of the dataset.
+* A clear separation is introduced at age 60, used to create the Age_Group feature
+* Majority of participants fall into the 60+ category, aligning with known Parkinson's prevalence trends
+
+This supports the inclusion of age-relatged features in the model.
+
+---
+
+### 📊 Age Group Distribution
+
+<p align="center">
+  <img src="results/age_distribution_60_threshold.png" width="700"/>
+</p>
+
+This plot shows the distribution of users across age groups:
+* Below 60
+* 60 and above
+
+The imbalance between groups reflects real-world data and reinforces the importance of incorporating demographic features into the model.
+
+---
+
+### 🚻 Gender Distribution (Train vs Test)
+
+<p align="center">
+  <img src="results/gender_distribution_training_vs_test.png" width="700"/>
+</p>
+
+This visualisation compares gender distribution across training and test datasets.
+* Both datasets maintain a balanced representation
+* Ensures fairness and consistency in model evaluation
+* Reduces risk of bias related to gender imbalance
+
+---
+
 ### 🔄 Class Imbalance Handling (SMOTE)
 
 <p align="center">
